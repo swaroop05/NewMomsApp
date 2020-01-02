@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.newmomquiz.MainActivity">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/questions_layout"
+            style="@style/linear_layout_properties"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_EditText_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_name_txt"
+                android:inputType="textCapWords" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/first_question" />
+
+            <EditText
+                android:id="@+id/first_Question_EditText_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_answer_txt" />
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/second_question" />
+
+            <RadioGroup
+                android:id="@+id/second_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/three_second_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/three_seconds" />
+
+                <RadioButton
+                    android:id="@+id/one_second_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/one_second" />
+
+                <RadioButton
+                    android:id="@+id/ten_seconds_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/ten_seconds" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/third_question" />
+
+            <RadioGroup
+                android:id="@+id/third_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/six_months_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/six_months" />
+
+                <RadioButton
+                    android:id="@+id/three_months_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/three_months" />
+
+
+                <RadioButton
+                    android:id="@+id/after_born_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/after_born" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/fourth_question" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/checkbox_layout"
+                style="@style/linear_layout_properties"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/one_week_check_box"
+                    style="@style/check_box_style"
+                    android:text="@string/one_week" />
+                <CheckBox
+                    android:id="@+id/seven_days_check_box"
+                    style="@style/check_box_style"
+                    android:text="@string/one_month"/>
+                <CheckBox
+                    android:id="@+id/fourteen_days_check_box"
+                    style="@style/check_box_style"
+                    android:text="@string/two_weeks" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/five_question" />
+
+            <RadioGroup
+                android:id="@+id/fifth_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/smell_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/smell_opt" />
+
+                <RadioButton
+                    android:id="@+id/hearing_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/hearing_opt" />
+
+                <RadioButton
+                    android:id="@+id/touch_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/touch_opt" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/sixth_question" />
+
+            <RadioGroup
+                android:id="@+id/sixth_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/two_and_half_k_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/two_and_half_k" />
+
+                <RadioButton
+                    android:id="@+id/five_k_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/five_k" />
+
+                <RadioButton
+                    android:id="@+id/seven_and_half_k_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/seven_and_half_K" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/seventh_question" />
+
+            <RadioGroup
+                android:id="@+id/seventh_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/true_option_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/true_option" />
+
+                <RadioButton
+                    android:id="@+id/false_option_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/false_option" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/eighth_question" />
+
+            <RadioGroup
+                android:id="@+id/eighth_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/less_than_2_percent_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/less_than_2_percent" />
+
+                <RadioButton
+                    android:id="@+id/three_to_four_percent_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/three_to_four_percent" />
+
+                <RadioButton
+                    android:id="@+id/ten_percent_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/ten_percent" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/ninth_question" />
+
+            <RadioGroup
+                android:id="@+id/ninth_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/three_hundred_times_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/three_hundred_times" />
+
+                <RadioButton
+                    android:id="@+id/four_hundred_times_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/four_hundred_times" />
+
+                <RadioButton
+                    android:id="@+id/five_hundred_times_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/five_hundred_times" />
+            </RadioGroup>
+
+
+            <TextView
+                style="@style/text_view_style"
+                android:text="@string/tenth_question" />
+
+            <RadioGroup
+                android:id="@+id/tenth_question_radio_group"
+                style="@style/radio_button_group_style">
+
+                <RadioButton
+                    android:id="@+id/six_to_nine_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/six_to_nine" />
+
+                <RadioButton
+                    android:id="@+id/two_to_four_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/two_to_four" />
+
+                <RadioButton
+                    android:id="@+id/five_to_seven_radio_button"
+                    style="@style/radio_button_style"
+                    android:text="@string/five_to_seven" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/questions_layout"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/linear_layout_properties"
+            android:layout_below="@id/divider"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <Button
+                android:id="@+id/reset_quiz"
+                style="@style/button_style"
+                android:onClick="resetAllOptions"
+                android:text="@string/reset_quiz" />
+
+            <Button
+                android:id="@+id/submit_quiz"
+                style="@style/button_style"
+                android:onClick="onSubmitBtnClick"
+                android:text="@string/submit_quiz" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
